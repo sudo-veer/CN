@@ -15,7 +15,7 @@ def receive(sock):
 # Create UDP socket
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-# Start thread to listen for messages
+# Start thread to listen for message
 threading.Thread(target=receive, args=(s,), daemon=True).start()
 
 print("Connected to UDP chat. Type messages and press Enter. Type 'exit' to quit.")

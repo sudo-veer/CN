@@ -22,7 +22,8 @@ def handle_client(conn, addr):
             full_msg = f"{addr}: {msg}\n"
             print(full_msg, end="")
 
-            # broadcast to all clients except sender
+            # broadcast to all clients except sender yes
+            
             for c in clients:
                 if c != conn:
                     c.sendall(full_msg.encode())

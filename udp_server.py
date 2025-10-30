@@ -18,7 +18,7 @@ while True:
     clients.add(addr)
     print(f"{addr}: {msg}")
 
-    # prepare message to send to all clients
+    # prepare message to send to all client
     full_msg = f"{addr}: {msg}"
 
     # send to all connected clients
